@@ -1,19 +1,24 @@
+// Given two numbers we have to find the power of the number a for which 
+// a to the power n equals b where b is power output
+// if not possible return -1
+
+
 
 public class UptoWhatPower {
     public static void main(String[] args) {
       int a=9,b=729;
       
-      int ans=0;
+      int n=0;
       int count=1;
       while(count!=b){
-        ans++;
+        n++;
         count=count*a;
         if(count>b){
-          ans=-1;
+          n=-1;
           break;
         }
       }
-      System.out.print(ans);
+      System.out.print(n);
       
     }
   }
